@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Carrois+Gothic+SC&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Exo 2", sans-serif;
+    font-family: "Exo 2", sans-serif;
+    
 }
 
 
@@ -12,7 +14,7 @@
 
 /* barra de navegación */
 
-header{
+header {
     display: flex;
     width: 100%;
     background-color: #1D4056;
@@ -22,28 +24,28 @@ header{
     padding: 8px 15px;
 }
 
-header .logo img{
+header .logo img {
     display: flex;
     height: 50px;
     margin: 10px;
     align-items: center;
-    
+
 }
 
-a{
+a {
     display: inline-block;
     text-decoration: none;
     text-shadow: 2px 1px 2px black;
-    
+
 }
 
-nav a{
+nav a {
     padding: 10px;
     color: white;
     font-size: large;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #bdc0cc;
     color: black;
     font-weight: 600;
@@ -54,31 +56,33 @@ nav a:hover{
 
 }
 
-/* main */
+/********* INICIO ********/
+
 
 .grid {
     display: grid;
     width: 99%;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 7.5rem;
     grid-auto-flow: dense;
-    grid-template-areas: 
-    "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
-    "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
-    "section-3 section-3 section-3 section-3 section-3 section-3 section-2 section-2 section-2 section-2 section-2 section-2"
-    ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."  
-    ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."  
-    "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
-    "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
-    "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
-    "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
-    "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
-    "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
-    ; 
+    grid-template-areas:
+        "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
+        "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
+        "section-3 section-3 section-3 section-3 section-3 section-3 section-2 section-2 section-2 section-2 section-2 section-2"
+        ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."
+        ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."
+        "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
+        "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+    ;
     gap: 5px;
     margin: 3px;
+
 }
-/********* INICIO ********/
+
 
 /*section-1 */
 .grid .section-1 {
@@ -90,16 +94,19 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid .section-1 a{
+
+.grid .section-1 a {
     width: 100%;
     height: 100%;
 }
-.grid .section-1 a img{
+
+.grid .section-1 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
     filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
 }
+
 .grid .section-1 h1 {
     position: absolute;
     color: white;
@@ -107,7 +114,8 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
-.grid .section-1 a:hover{
+
+.grid .section-1 a:hover {
     padding: 3px;
 }
 
@@ -120,17 +128,20 @@ nav a:hover{
     margin: 2px;
     justify-self: center;
 }
+
 .grid .section-2 a {
-    width: 100%;    
+    width: 100%;
     height: 100%;
 }
-.grid .section-2 a img{
+
+.grid .section-2 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
     filter: brightness(1) drop-shadow(2px 2px 5px grey);
 }
-.grid .section-2 a:hover{
+
+.grid .section-2 a:hover {
     padding: 3px;
 }
 
@@ -140,24 +151,26 @@ nav a:hover{
     grid-area: section-3;
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     justify-self: center;
     width: 100%;
     height: 100%;
     margin: 2px;
     position: relative;
 }
-.grid .section-3 a{
+
+.grid .section-3 a {
     width: 100%;
     height: 100%;
 }
 
-.grid .section-3 a img{
-    padding:2px;
+.grid .section-3 a img {
+    padding: 2px;
     width: 100%;
     height: 100%;
     filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
 }
+
 .grid .section-3 h2 {
     position: absolute;
     color: white;
@@ -165,7 +178,8 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
-.grid .section-3 a:hover{
+
+.grid .section-3 a:hover {
     padding: 3px;
 }
 
@@ -209,6 +223,7 @@ nav a:hover{
     position: relative;
     justify-self: center;
 }
+
 /*section-7 */
 .grid .section-7 {
     grid-area: section-7;
@@ -228,17 +243,19 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     margin: 2px;
     position: relative;
 }
-.grid .product a{
+
+.grid .product a {
     width: 100%;
     height: 100%;
 }
-.grid .product a img{
+
+.grid .product a img {
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -252,11 +269,13 @@ nav a:hover{
     text-shadow: 1px 1px 2px grey;
     font-weight: 500;
 }
-.grid .product a:hover{
+
+.grid .product a:hover {
     filter: brightness(0.9);
     padding: 4px;
     color: white;
 }
+
 /*section-9 */
 .grid .section-9 {
     grid-area: section-9;
@@ -267,11 +286,13 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid .section-9 a{
+
+.grid .section-9 a {
     width: 100%;
     height: 100%;
 }
-.grid .section-9 a img{
+
+.grid .section-9 a img {
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -279,7 +300,8 @@ nav a:hover{
     height: 100%;
     filter: brightness(1) drop-shadow(2px 2px 5px grey);
 }
-.grid .section-9 a:hover{
+
+.grid .section-9 a:hover {
     padding: 2px;
 }
 
@@ -293,11 +315,13 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid .section-10 a{
+
+.grid .section-10 a {
     width: 100%;
     height: 100%;
 }
-.grid .section-10 a img{
+
+.grid .section-10 a img {
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -305,9 +329,11 @@ nav a:hover{
     height: 100%;
     filter: drop-shadow(2px 2px 5px grey);
 }
-.grid .section-10 a:hover{
+
+.grid .section-10 a:hover {
     padding: 2px;
 }
+
 /*section-11 */
 .grid .section-11 {
     grid-area: section-11;
@@ -318,11 +344,13 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid .section-11 a{
+
+.grid .section-11 a {
     width: 100%;
     height: 100%;
 }
-.grid .section-11 a img{
+
+.grid .section-11 a img {
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -330,9 +358,11 @@ nav a:hover{
     height: 100%;
     filter: drop-shadow(2px 2px 5px grey);
 }
-.grid .section-11 a:hover{
+
+.grid .section-11 a:hover {
     padding: 2px;
 }
+
 /*section-11 */
 .grid .section-12 {
     grid-area: section-12;
@@ -343,11 +373,13 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid .section-12 a{
+
+.grid .section-12 a {
     width: 100%;
     height: 100%;
 }
-.grid .section-12 a img{
+
+.grid .section-12 a img {
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -355,22 +387,23 @@ nav a:hover{
     height: 100%;
     filter: drop-shadow(2px 2px 5px grey);
 }
-.grid .section-12 a:hover{
+
+.grid .section-12 a:hover {
     padding: 2px;
 }
 
-/********* INICIO ********/
+/******* SERVICIO TECNICO *****/
 
 .grid-service {
     display: grid;
     width: 99%;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 30rem);
     grid-auto-flow: dense;
-    grid-template-areas: 
-    "service-1 service-2 service-3"
-    "service-4 service-5 service-6"
-    ; 
+    grid-template-areas:
+        "service-1 service-2 service-3"
+        "service-4 service-5 service-6"
+    ;
     gap: 5px;
     row-gap: 10px;
     margin: 3px;
@@ -387,44 +420,50 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-1 a{
+
+.grid-service .service-1 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-1 a img{
+
+.grid-service .service-1 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4);
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-1 h3 {
     position: absolute;
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: xx-large;
     font-weight: 500;
+    
 
 }
-.grid-service .service-1 p {
+
+.grid-service .service-1 p { 
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-1 a:hover{
+
+.grid-service .service-1 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
 
 /**** service-2 *****/
@@ -438,16 +477,20 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-2 a{
+
+.grid-service .service-2 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-2 a img{
+
+.grid-service .service-2 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4);
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-2 h3 {
     position: absolute;
     color: white;
@@ -455,27 +498,29 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
+
 .grid-service .service-2 p {
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-2 a:hover{
+
+.grid-service .service-2 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
+
 /******* service-3 *****/
 .grid-service .service-3 {
     grid-area: service-3;
@@ -487,16 +532,20 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-3 a{
+
+.grid-service .service-3 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-3 a img{
+
+.grid-service .service-3 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4);
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-3 h3 {
     position: absolute;
     color: white;
@@ -504,27 +553,29 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
+
 .grid-service .service-3 p {
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-3 a:hover{
+
+.grid-service .service-3 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
+
 /**** service-4 ****/
 .grid-service .service-4 {
     grid-area: service-4;
@@ -536,16 +587,20 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-4 a{
+
+.grid-service .service-4 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-4 a img{
+
+.grid-service .service-4 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4);
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-4 h3 {
     position: absolute;
     color: white;
@@ -553,27 +608,29 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
+
 .grid-service .service-4 p {
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-4 a:hover{
+
+.grid-service .service-4 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
+
 /**** service-5 *****/
 .grid-service .service-5 {
     grid-area: service-5;
@@ -585,16 +642,20 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-5 a{
+
+.grid-service .service-5 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-5 a img{
+
+.grid-service .service-5 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4) ;
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-5 h3 {
     position: absolute;
     color: white;
@@ -602,27 +663,29 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
+
 .grid-service .service-5 p {
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-5 a:hover{
+
+.grid-service .service-5 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
+
 /******* service-6 *****/
 .grid-service .service-6 {
     grid-area: service-6;
@@ -634,16 +697,20 @@ nav a:hover{
     height: 100%;
     margin: 2px;
 }
-.grid-service .service-6 a{
+
+.grid-service .service-6 a {
     width: 100%;
     height: 100%;
 }
-.grid-service .service-6 a img{
+
+.grid-service .service-6 a img {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+    filter: brightness(0.4);
+    border-radius: 0.5rem;
 }
+
 .grid-service .service-6 h3 {
     position: absolute;
     color: white;
@@ -651,27 +718,156 @@ nav a:hover{
     font-size: xx-large;
     font-weight: 500;
 }
+
 .grid-service .service-6 p {
     flex: wrap;
-    background-color: #1D4056;
-    filter: opacity(0.8);
     color: white;
     text-shadow: 1px 1px 2px grey;
     font-size: large;
     align-items: center;
     justify-content: center;
-    font-weight: 200;
+    font-weight: 250;
     padding: 10px;
     gap: 5px;
-    height:7rem;
+    height: 7rem;
     width: 99%;
-    border-radius: 0.2rem;
-    margin:0.4rem;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.grid-service .service-6 a:hover{
+
+.grid-service .service-6 a:hover {
     padding: 2px;
-    filter:grayscale(40%);
+    filter: blur(1px);
 }
+/******* USER *****/
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100vh;
+    height:35rem ;
+    background-size: cover;
+}
+.login {
+    position: relative;
+    width: 400px;
+    backdrop-filter: blur(2rem);
+    border: 2px solid rgb(255, 255,255, .6);
+    border-radius: 20px;
+    height: 450px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h2 {
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.input label {
+    position: absolute;
+    top: 50%;
+    left: 5PX;
+    transform: translateY(-50%);
+    color:#fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+.input input {
+    width:100% ;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: #fff;
+}
+
+.input i{
+    position: absolute;
+    color: white;
+    font-size: 1.6rem;
+    top:19px;
+    right:8px;
+}
+
+.olvidar{
+    margin: -15px 0 15px;
+    font-size: .9rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.olvidar label input {
+    margin: 2px;
+}
+.olvidar label a {
+    color: white;
+    text-decoration: none;
+    padding: -5px;
+    margin-left: 14px;
+    transition: .3s;
+    font-size:.9em;
+}
+
+.olvidar label a:hover {
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    border-radius:40px ;
+    background: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.registrar {
+    font-size: .8rem;
+    color: white;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.registrar p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    margin: 0 0.3rem;
+}
+
+.registrar p a:hover{
+    text-decoration: underline;
+}
+
 
 
 /* footer */
@@ -681,8 +877,8 @@ footer {
     width: 100%;
     background-color: #1D4056;
     justify-content: space-between;
-    align-items: center;  
-    padding: 10px 10px;  
+    align-items: center;
+    padding: 10px 10px;
 }
 
 footer img {
@@ -693,61 +889,78 @@ footer img {
     align-items: center;
     padding: 5px;
 }
+
 footer div {
     margin: 10px;
     color: white;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
+
 footer div .red-social {
     color: white;
     font-size: 25px;
     margin: 10px;
 }
+
 footer div h2 {
     font-weight: 300;
     margin-right: 20px;
     text-shadow: 2px 1px 2px black;
 }
 
-@media (max-width:762px){
+body {
+    background-image: linear-gradient(to right bottom, #1d4056, #1f4a60, #225569, #255f72, #2a6a7a, #2c6c7d, #2e6d81, #306f84, #326882, #36627e, #3a5b7a, #3f5474);
+}
+
+@media (max-width:762px) {
     header {
         flex-direction: column;
     }
+
     header .logo img {
         height: 40px;
         margin: 0px;
     }
+
     nav {
         padding: 10px 0px;
     }
+
     .grid {
         grid-template-rows: 6rem;
         gap: 2px;
         margin: 1px;
     }
+
     .grid .section-1 h1 {
-        font-size:x-large;
+        font-size: x-large;
     }
+
     .grid .section-3 h2 {
-        font-size:x-large;
+        font-size: x-large;
     }
-    .grid .product a img{
+
+    .grid .product a img {
         padding: 1px;
     }
 }
-@media (max-width:420px){
+
+@media (max-width:420px) {
     header {
         flex-direction: row;
     }
+
     header nav {
         padding: 0px;
-    
+
     }
+
     header nav a {
         font-size: medium;
         padding: 5px;
     }
+
     header nav .nav-link {
         display: none;
     }
@@ -755,25 +968,29 @@ footer div h2 {
     .grid .section-8 {
         display: none;
     }
+
     .grid .section-10 {
         display: none;
     }
+
     .grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-        "section-1 section-1"
-        "section-3 section-3"
-        "section-2 section-2"
-        "section-4 section-5"
-        "section-6 section-7"
-        "section-9 section-9"
-        "section-11 section-11"
-        "section-12 section-12"
-        ;       
+            "section-1 section-1"
+            "section-3 section-3"
+            "section-2 section-2"
+            "section-4 section-5"
+            "section-6 section-7"
+            "section-9 section-9"
+            "section-11 section-11"
+            "section-12 section-12"
+        ;
     }
-    footer div h2{
+
+    footer div h2 {
         display: none;
     }
+
     footer {
         font-size: small;
     }
