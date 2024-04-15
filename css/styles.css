@@ -753,7 +753,7 @@ nav a:hover {
 .login {
     position: relative;
     width: 400px;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2.1rem);
     border: 2px solid rgb(255, 255,255, .6);
     border-radius: 20px;
     height: 450px;
