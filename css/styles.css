@@ -74,10 +74,12 @@ nav a:hover{
     "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
     "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
     "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
-    ;
+    ; 
     gap: 5px;
     margin: 3px;
 }
+/********* INICIO ********/
+
 /*section-1 */
 .grid .section-1 {
     grid-area: section-1;
@@ -357,9 +359,319 @@ nav a:hover{
     padding: 2px;
 }
 
+/********* INICIO ********/
 
+.grid-service {
+    display: grid;
+    width: 99%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 30rem);
+    grid-auto-flow: dense;
+    grid-template-areas: 
+    "service-1 service-2 service-3"
+    "service-4 service-5 service-6"
+    ; 
+    gap: 5px;
+    row-gap: 10px;
+    margin: 3px;
+}
 
+/**** service-1 ****/
+.grid-service .service-1 {
+    grid-area: service-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-1 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-1 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-1 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
 
+}
+.grid-service .service-1 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-1 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
+
+/**** service-2 *****/
+.grid-service .service-2 {
+    grid-area: service-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-2 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-2 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-2 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.grid-service .service-2 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-2 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
+/******* service-3 *****/
+.grid-service .service-3 {
+    grid-area: service-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-3 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-3 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-3 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.grid-service .service-3 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-3 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
+/**** service-4 ****/
+.grid-service .service-4 {
+    grid-area: service-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-4 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-4 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-4 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.grid-service .service-4 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-4 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
+/**** service-5 *****/
+.grid-service .service-5 {
+    grid-area: service-5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-5 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-5 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-5 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.grid-service .service-5 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-5 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
+/******* service-6 *****/
+.grid-service .service-6 {
+    grid-area: service-6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+.grid-service .service-6 a{
+    width: 100%;
+    height: 100%;
+}
+.grid-service .service-6 a img{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+.grid-service .service-6 h3 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.grid-service .service-6 p {
+    flex: wrap;
+    background-color: #1D4056;
+    filter: opacity(0.8);
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 10px;
+    gap: 5px;
+    height:7rem;
+    width: 99%;
+    border-radius: 0.2rem;
+    margin:0.4rem;
+}
+.grid-service .service-6 a:hover{
+    padding: 2px;
+    filter:grayscale(40%);
+}
 
 
 /* footer */
