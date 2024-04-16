@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Exo 2", sans-serif;
-    
+
 }
 
 
@@ -397,6 +397,7 @@ nav a:hover {
 .grid-service {
     display: grid;
     width: 99%;
+    height: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 30rem);
     grid-auto-flow: dense;
@@ -440,11 +441,11 @@ nav a:hover {
     text-shadow: 1px 1px 2px grey;
     font-size: xx-large;
     font-weight: 500;
-    
+
 
 }
 
-.grid-service .service-1 p { 
+.grid-service .service-1 p {
     flex: wrap;
     color: white;
     text-shadow: 1px 1px 2px grey;
@@ -652,7 +653,7 @@ nav a:hover {
     padding: 2px;
     width: 100%;
     height: 100%;
-    filter: brightness(0.4) ;
+    filter: brightness(0.4);
     border-radius: 0.5rem;
 }
 
@@ -740,24 +741,25 @@ nav a:hover {
     padding: 2px;
     filter: blur(1px);
 }
+
 /******* USER *****/
 .user {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 100vh;
-    height:35rem ;
-    background-size: cover;
+    height: 35rem;
+    background-size: none;
 }
+
 .login {
     position: relative;
     width: 400px;
     backdrop-filter: blur(2.1rem);
-    border: 2px solid rgb(255, 255,255, .6);
+    border: 2px solid rgb(255, 255, 255, .6);
     border-radius: 20px;
     height: 450px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -780,17 +782,25 @@ nav a:hover {
     top: 50%;
     left: 5PX;
     transform: translateY(-50%);
-    color:#fff;
+    color: #fff;
     font-size: 1rem;
     pointer-events: none;
     transition: .6s;
 }
-input:focus ~ label,
-input:valid ~ label {
+
+input:focus~label{
     top: -5px;
 }
+input:valid~label {
+    top: -5px;
+}
+input:user-invalid~label{
+    top: -5px;
+    color: red;
+}
+
 .input input {
-    width:100% ;
+    width: 100%;
     height: 50px;
     background-color: transparent;
     border: none;
@@ -800,15 +810,15 @@ input:valid ~ label {
     color: #fff;
 }
 
-.input i{
+.input i {
     position: absolute;
     color: white;
     font-size: 1.6rem;
-    top:19px;
-    right:8px;
+    top: 19px;
+    right: 8px;
 }
 
-.olvidar{
+.olvidar {
     margin: -15px 0 15px;
     font-size: .9rem;
     color: white;
@@ -816,26 +826,28 @@ input:valid ~ label {
     justify-content: center;
     align-items: center;
 }
+
 .olvidar label input {
     margin: 2px;
 }
+
 .olvidar label a {
     color: white;
     text-decoration: none;
     padding: -5px;
     margin-left: 14px;
     transition: .3s;
-    font-size:.9em;
+    font-size: .9em;
 }
 
 .olvidar label a:hover {
     text-decoration: underline;
 }
 
-button{
+button {
     width: 100%;
     height: 45px;
-    border-radius:40px ;
+    border-radius: 40px;
     background: white;
     border: none;
     font-weight: bold;
@@ -864,7 +876,7 @@ button:hover {
     margin: 0 0.3rem;
 }
 
-.registrar p a:hover{
+.registrar p a:hover {
     text-decoration: underline;
 }
 
@@ -910,7 +922,7 @@ footer div h2 {
 }
 
 body {
-    background-image: linear-gradient(to right bottom, #1d4056, #1f4a60, #225569, #255f72, #2a6a7a, #2c6c7d, #2e6d81, #306f84, #326882, #36627e, #3a5b7a, #3f5474);
+    background-image: linear-gradient(to left top, #1d4056, #194d62, #145b6c, #156974, #1e777a, #388584, #4d938e, #61a198, #7fb4ac, #9cc7c0, #badad4, #d7ede9);
 }
 
 @media (max-width:762px) {
@@ -944,6 +956,97 @@ body {
     .grid .product a img {
         padding: 1px;
     }
+
+    .grid-service {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 3fr);
+        width: 98%;
+        height: 100%;
+        grid-template-areas:
+            "service-1 service-2"
+            "service-3 service-4"
+            "service-5 service-6"
+        ;
+        padding: 10px;
+        gap: 4vh;
+    }
+
+    .grid-service .service-1 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-2 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-3 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-4 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-5 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-6 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-1 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-2 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-3 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-4 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-5 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-6 h3 {
+        font-size: 3.5vh;
+    }
+    .login {
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .login h2 {
+        font-size: 5vh;
+    }
+    .login .input {
+        font-size: 1vh;
+    }
+
+
+    footer div h2 {
+        display: none;
+    }
+
 }
 
 @media (max-width:420px) {
@@ -986,6 +1089,118 @@ body {
             "section-12 section-12"
         ;
     }
+
+    .grid-service {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 15rem);
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "service-1 service-2"
+            "service-3 service-4"
+            "service-5 service-6"
+        ;
+        padding: 10px;
+    }
+
+    .grid-service .service-1 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-2 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-3 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-4 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-5 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-6 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-1 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-2 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-3 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-4 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-5 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-6 h3 {
+        font-size: 2vh;
+    }
+    .user {
+        height: 30rem;
+        min-width: none;
+    }
+    .login {
+        width: 12rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .login h2 {
+        font-size: 2.5vh;
+    }
+    .login .input label{
+        font-size: 2vh;
+    }
+    .login .input i {
+        font-size: 1rem;
+        width: 3vh;
+    }
+    .login .input {
+        width: 100%;
+    }
+    div button {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .login .olvidar {
+
+        align-items: center;
+        justify-content: center;
+    }
+    .registrar p {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 2vh;
+    }
+    .registrar{
+        position: absolute;
+        width: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        flex:wrap;
+        }
 
     footer div h2 {
         display: none;
