@@ -1,0 +1,335 @@
+/********* INICIO ********/
+
+
+.grid {
+    display: grid;
+    width: 99%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 7.5rem;
+    grid-auto-flow: dense;
+    grid-template-areas:
+        "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
+        "section-1 section-1 section-1 section-1 section-1 section-1 section-2 section-2 section-2 section-2 section-2 section-2"
+        "section-3 section-3 section-3 section-3 section-3 section-3 section-2 section-2 section-2 section-2 section-2 section-2"
+        ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."
+        ". section-4 section-4 section-5 section-5 section-6 section-6 section-7 section-7 section-8 section-8 ."
+        "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
+        "section-9 section-9 section-9 section-9 section-10 section-10 section-10 section-10 section-11 section-11 section-11 section-11"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+        "section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12 section-12"
+    ;
+    gap: 5px;
+    margin: 3px;
+
+}
+
+
+/*section-1 */
+.grid .section-1 {
+    grid-area: section-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+.grid .section-1 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-1 a img {
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-1 h1 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.grid .section-1 a:hover {
+    padding: 3px;
+}
+
+/* section-2 */
+
+.grid .section-2 {
+    grid-area: section-2;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    justify-self: center;
+}
+
+.grid .section-2 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-2 a img {
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1) drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-2 a:hover {
+    padding: 3px;
+}
+
+/* section-3 */
+
+.grid .section-3 {
+    grid-area: section-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+}
+
+.grid .section-3 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-3 a img {
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5) drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-3 h2 {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.grid .section-3 a:hover {
+    padding: 3px;
+}
+
+/*section-4 */
+.grid .section-4 {
+    grid-area: section-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+}
+
+/*section-5 */
+.grid .section-5 {
+    grid-area: section-5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+    justify-self: center;
+}
+
+
+/*section-6 */
+.grid .section-6 {
+    grid-area: section-6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+    justify-self: center;
+}
+
+/*section-7 */
+.grid .section-7 {
+    grid-area: section-7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+}
+
+/*section-8 */
+.grid .section-8 {
+    grid-area: section-8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    position: relative;
+}
+
+.grid .product a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .product a img {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px grey);
+}
+
+.grid .product a {
+    padding: 5px;
+    text-shadow: 1px 1px 2px grey;
+    font-weight: 500;
+}
+
+.grid .product a:hover {
+    filter: brightness(0.9);
+    padding: 4px;
+    color: white;
+}
+
+/*section-9 */
+.grid .section-9 {
+    grid-area: section-9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+.grid .section-9 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-9 a img {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1) drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-9 a:hover {
+    padding: 2px;
+}
+
+/*section-10 */
+.grid .section-10 {
+    grid-area: section-10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+.grid .section-10 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-10 a img {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-10 a:hover {
+    padding: 2px;
+}
+
+/*section-11 */
+.grid .section-11 {
+    grid-area: section-11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+.grid .section-11 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-11 a img {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-11 a:hover {
+    padding: 2px;
+}
+
+/*section-11 */
+.grid .section-12 {
+    grid-area: section-12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+.grid .section-12 a {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .section-12 a img {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px grey);
+}
+
+.grid .section-12 a:hover {
+    padding: 2px;
+}

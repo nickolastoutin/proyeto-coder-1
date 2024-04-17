@@ -1,0 +1,285 @@
+@media (max-width:762px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo img {
+        height: 40px;
+        margin: 0px;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    .grid {
+        grid-template-rows: 6rem;
+        gap: 2px;
+        margin: 1px;
+    }
+
+    .grid .section-1 h1 {
+        font-size: x-large;
+    }
+
+    .grid .section-3 h2 {
+        font-size: x-large;
+    }
+
+    .grid .product a img {
+        padding: 1px;
+    }
+
+    .grid-service {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 3fr);
+        width: 98%;
+        height: 100%;
+        grid-template-areas:
+            "service-1 service-2"
+            "service-3 service-4"
+            "service-5 service-6"
+        ;
+        padding: 10px;
+        gap: 4vh;
+    }
+
+    .grid-service .service-1 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-2 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-3 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-4 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-5 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-6 p {
+        font-size: 2vh;
+        height: 20%;
+        padding: 1vh;
+    }
+
+    .grid-service .service-1 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-2 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-3 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-4 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-5 h3 {
+        font-size: 3.5vh;
+    }
+
+    .grid-service .service-6 h3 {
+        font-size: 3.5vh;
+    }
+    .login {
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .login h2 {
+        font-size: 5vh;
+    }
+    .login .input {
+        font-size: 1vh;
+    }
+
+
+    footer div h2 {
+        display: none;
+    }
+
+}
+
+@media (max-width:420px) {
+    header {
+        flex-direction: row;
+    }
+
+    header nav {
+        padding: 0px;
+
+    }
+
+    header nav a {
+        font-size: medium;
+        padding: 5px;
+    }
+
+    header nav .nav-link {
+        display: none;
+    }
+
+    .grid .section-8 {
+        display: none;
+    }
+
+    .grid .section-10 {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "section-1 section-1"
+            "section-3 section-3"
+            "section-2 section-2"
+            "section-4 section-5"
+            "section-6 section-7"
+            "section-9 section-9"
+            "section-11 section-11"
+            "section-12 section-12"
+        ;
+    }
+
+    .grid-service {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 15rem);
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "service-1 service-2"
+            "service-3 service-4"
+            "service-5 service-6"
+        ;
+        padding: 10px;
+    }
+
+    .grid-service .service-1 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-2 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-3 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-4 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-5 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-6 p {
+        font-size: 1vh;
+    }
+
+    .grid-service .service-1 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-2 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-3 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-4 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-5 h3 {
+        font-size: 2vh;
+    }
+
+    .grid-service .service-6 h3 {
+        font-size: 2vh;
+    }
+    .user {
+        height: 30rem;
+        min-width: none;
+    }
+    .login {
+        width: 12rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .login h2 {
+        font-size: 2.5vh;
+    }
+    .login .input label{
+        font-size: 2vh;
+    }
+    .login .input i {
+        font-size: 1rem;
+        width: 3vh;
+    }
+    .login .input {
+        width: 100%;
+    }
+    div button {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .login .olvidar {
+
+        align-items: center;
+        justify-content: center;
+    }
+    .registrar p {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 2vh;
+    }
+    .registrar{
+        position: absolute;
+        width: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        flex:wrap;
+        }
+
+    footer div h2 {
+        display: none;
+    }
+
+    footer {
+        font-size: small;
+    }
+}

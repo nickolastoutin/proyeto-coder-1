@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Carrois+Gothic+SC&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+
+}
+
+
+
+/* #1D4056,#38D1B5,#F65859*/
+
+/* barra de navegación */
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #1D4056;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+header .logo img {
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    align-items: center;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: 2px 1px 2px black;
+
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    font-size: large;
+}
+
+nav a:hover {
+    background-color: #bdc0cc;
+    color: black;
+    font-weight: 600;
+    padding: 5px 10px;
+    opacity: 0.7;
+    border-radius: 25px;
+    text-shadow: 0.5px 0.5px 2px white;
+
+}
+/* footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #1D4056;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}   footer img {
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    margin-right: 10px;
+    align-items: center;
+    padding: 5px;
+}   footer div {
+    margin: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+footer div .red-social {
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+
+footer div h2 {
+    font-weight: 300;
+    margin-right: 20px;
+    text-shadow: 2px 1px 2px black;
+}
+
+body {
+    background-image: linear-gradient(to left top, #1d4056, #194d62, #145b6c, #156974, #1e777a, #388584, #4d938e, #61a198, #7fb4ac, #9cc7c0, #badad4, #d7ede9);
+}
