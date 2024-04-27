@@ -1,5 +1,7 @@
 @import "generales.scss";
-@import "index.scss";
-@import "service.scss";
-@import "user.scss";
-@import "mediaqueries.scss"
+@import "./pages/index";
+@import "./pages/service";
+@import "./pages/usuario.scss";
+@import "./pages/tienda.scss";
+@import "./pages/carrito.scss";
+@import "./queries/mediaqueries"
