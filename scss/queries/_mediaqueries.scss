@@ -34,7 +34,6 @@
 }
 @media (max-width:762px) {
     .login {
-        
         width: 100%;
         .formulario h2 {
             font-size: 1.5rem;
@@ -57,9 +56,9 @@
         
     }
     .grid-tienda .contenedor-productos-1 .card .precio {
-        padding: 0;
+        padding: -10px;
         font-size: 3vh;
-        margin: 2px;
+        
         bottom: 7vh;
     }
     .grid-tienda .contenedor-productos-1 .card .descripcion {
