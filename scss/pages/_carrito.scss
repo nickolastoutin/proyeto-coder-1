@@ -1,0 +1,132 @@
+.html-carrito{
+    display: grid;
+    grid-template-rows: repeat(5,200px);
+    width: 100%;
+    gap: 1vh;
+    margin-top: 1rem;
+    padding: 1rem;
+    .carrito {
+        box-shadow: 0 0 5px;
+        border-radius: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }  
+    img {
+       width: auto;
+       height: 90%;
+       position: absolute;
+       left: 7vh;
+       bottom: 1vh;
+       padding: 1vh;
+       justify-self: center;
+       align-self: center;
+       border-radius: 1rem;
+    }
+    .descripcion-carrito {
+        position: absolute;
+        left: 25%;
+        top: 15%;
+        width: 40%;
+        .nombre {
+            font-size: 3.5vh;
+            padding: 2vh;
+        }
+        .new {
+            color: white;
+            background-color: black;
+            padding: 1%;
+            border-radius: 1vh;
+            margin: 1vh;
+            font-size: 10px;
+            
+        }
+        h4 {
+            padding: 2vh;
+            font-size: 2.5vh;
+            color: rgb(97, 104, 108);
+        }
+    }
+    .cantidad {
+        width: 20%;
+        
+        a {
+            color: #1D4056;
+            text-shadow: 0 0 1px;
+            font-weight: 100;
+            background-color: #d9d9d9;
+            border-radius: 1vh;
+            padding: .5rem;
+
+            }
+        a:hover {
+            scale: 1.04;
+        }
+        h3 {
+            margin-top: 2vh;
+        }       
+        font-size: 3vh;
+        position: absolute;
+        right:5%;
+        top:40%;
+        gap: 1rem;
+        input {
+            width: 5vh;
+            height: auto;
+        }
+    }
+    .detalle-pago {
+        width: 100%;
+        display: flex;
+        padding: 1vh;
+        padding-left: 3vh;
+        background-color: rgb(213, 213, 213);
+        border-radius: 1vh;
+        .envio {
+            width: 40%;
+            input {
+                width: 70%;
+                border-radius: 5px;
+            }
+            h4 {
+                font-weight: 300;
+            }    
+        }
+        .cupon {
+            width:20%;
+            justify-content: center;
+            text-align: center;
+            input {
+                border-radius: 5px;
+            }
+            button {
+                height: 4vh;
+                width: 20%;
+                padding: 2px;
+                margin: 2vh;
+                font-size: 2vh;
+                border-radius: 1vh;
+            }
+        }
+        .pagar {
+            text-align: left;
+            margin-left: 10%;
+            border-radius: 1vh;
+            width: 40%;
+            .resumen {
+                padding: 1vh;
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                h3 {
+                    font-weight: 300;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+            
+    }
+}

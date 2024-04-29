@@ -33,6 +33,13 @@
 
 }
 @media (max-width:762px) {
+    .login {
+        
+        width: 100%;
+        .formulario h2 {
+            font-size: 1.5rem;
+        }
+    }
     .grid-tienda {
         grid-template-columns: repeat(4,1fr);
         grid-template-rows:50vh auto 50vh auto;
@@ -202,14 +209,44 @@
 
 }
 @media (max-width:600px){
+    
+    .usuario {
+        .login {
+            .formulario {
+                .boton {
+                    button {
+                        margin-left: 20%;
+                        
+                    }
+                    .registrar p a {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+        
+    }
     .grid-tienda .contenedor-productos-1 .card-4 {
         display: none;
     }
     .grid-tienda .contenedor-productos-2 .card-6 {
         display: none;
     }
-}
+
 @media (max-width:420px) {
+    .usuario {
+        .login {
+            .formulario {
+                .boton {
+                    .registar p {
+                        margin-bottom: 2vh;
+                        
+                    }
+                }
+            }
+        }
+    }
     .grid-tienda .contenedor-productos-1 .card-1 {
         display: none;
     }
