@@ -1,4 +1,8 @@
 @media (max-width:900px){
+    .descripcion-carrito h4 {
+        display: none;
+    }
+    
     .grid-tienda .contenedor-productos-1 .card .grupo-boton {
         padding: 0;
         font-size: small;
@@ -33,6 +37,17 @@
 
 }
 @media (max-width:762px) {
+    .html-carrito {
+        .carrito {
+            .cantidad {
+                font-size: 2vh;
+                width: 15vh;
+                h3 {
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
     .login {
         width: 100%;
         .formulario h2 {

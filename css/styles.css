@@ -1133,12 +1133,12 @@ body {
 }
 .html-carrito .descripcion-carrito {
   position: absolute;
-  left: 25%;
-  top: 15%;
-  width: 40%;
+  left: 35%;
+  top: 1vh;
+  width: 30%;
 }
 .html-carrito .descripcion-carrito .nombre {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   padding: 2vh;
 }
 .html-carrito .descripcion-carrito .new {
@@ -1150,13 +1150,13 @@ body {
   font-size: 10px;
 }
 .html-carrito .descripcion-carrito h4 {
-  padding: 2vh;
-  font-size: 2.5vh;
+  padding: 0;
+  font-size: 1vh;
   color: rgb(97, 104, 108);
 }
 .html-carrito .cantidad {
-  width: 20%;
-  font-size: 3vh;
+  width: 20vh;
+  font-size: 2vh;
   position: absolute;
   right: 5%;
   top: 40%;
@@ -1233,6 +1233,9 @@ body {
 }
 
 @media (max-width: 900px) {
+  .descripcion-carrito h4 {
+    display: none;
+  }
   .grid-tienda .contenedor-productos-1 .card .grupo-boton {
     padding: 0;
     font-size: small;
@@ -1265,6 +1268,13 @@ body {
   }
 }
 @media (max-width: 762px) {
+  .html-carrito .carrito .cantidad {
+    font-size: 2vh;
+    width: 15vh;
+  }
+  .html-carrito .carrito .cantidad h3 {
+    font-size: 2vh;
+  }
   .login {
     width: 100%;
   }
