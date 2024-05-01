@@ -76,6 +76,12 @@
         max-width: 10vh;
         
     }
+    .grid-tienda .contenedor-productos-2 .card img {
+        min-height: none;
+        min-width: none;
+        max-width: 10vh;
+        
+    }
     .grid-tienda .contenedor-productos-1 .card .precio {
         padding: -10px;
         font-size: 2vh;
@@ -90,7 +96,7 @@
     }
     .grid-tienda .contenedor-productos-2 .card .precio {
         padding: 0;
-        font-size: 3vh;
+        font-size: 2vh;
         margin: 2px;
         bottom: 7vh;
     }
@@ -101,7 +107,7 @@
         display: none;
     }
     .grid-tienda .contenedor-productos-2 .card .nombre-producto {
-        font-size: 2.5vh;
+        font-size: 2vh;
         padding: 10px;
         margin: 5px;
     }
