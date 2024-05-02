@@ -1,8 +1,7 @@
 @media (max-width:900px){
-    .descripcion-carrito h4 {
-        display: none;
-    }
     
+    
+    } 
     .grid-tienda .contenedor-productos-1 .card .grupo-boton {
         padding: 0;
         font-size: small;
@@ -40,18 +39,28 @@
         display: none;
     }
 
-}
+
 @media (max-width:762px) {
     .html-carrito {
         .carrito {
-            .cantidad {
-                font-size: 2vh;
-                width: 15vh;
+            height: 150px;
+        }
+        .detalle-pago {
+            .envio {
                 h3 {
-                    font-size: 2vh;
+                    font-size: 2.5vh;
                 }
             }
+            .cupon h3 {
+                font-size: 2.5vh;
+            }
+            .pagar h3 {
+                font-size: 2.5vh;
+            }
         }
+
+
+
     }
     .login {
         width: 100%;
@@ -236,7 +245,39 @@
 
 }
 @media (max-width:600px){
-    
+    .html-carrito{
+        .carrito {
+            .descripcion-carrito {
+                h3 {
+                    font-size: 2vh;
+                }
+                h4 {
+                    font-size: 1.5vh;
+                }
+            }
+            .cantidad {
+                gap: 1vh;
+                a {
+                    margin: 1vh;
+                    i {
+                        
+                    }
+                }
+            }
+        }
+        .detalle-pago {
+            height: fit-content;
+            .envio {
+                width: 30%;
+            }
+            .pagar{
+                width: 50%  ;
+                h3 {
+                    font-size: 1.6vh;
+                }
+            }
+        }
+    }
     .usuario {
         .login {
             .formulario {
@@ -257,6 +298,30 @@
     
 
 @media (max-width:420px) {
+    .html-carrito{
+        .carrito {
+            height: 120px;
+            .descripcion-carrito{
+                width: 45%;
+                h3{
+                    font-size: 1.5vh;
+                }
+                h4 {
+                    font-size: 1.2vh;
+                }
+            }
+        }
+        .detalle-pago{
+            .envio {
+                h3 {
+                    font-size: 2vh;
+                }
+            }
+            .cupon {
+                display: none;
+            }
+        }
+    }
     .usuario {
         .login {
             .formulario {
