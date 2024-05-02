@@ -1161,9 +1161,10 @@ body {
 }
 .html-carrito .cantidad {
   width: 20vh;
-  font-size: 2vh;
-  top: 40%;
-  gap: 1rem;
+  gap: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .html-carrito .cantidad a {
   color: #1D4056;
@@ -1172,16 +1173,17 @@ body {
   background-color: #d9d9d9;
   border-radius: 1vh;
   padding: 0.3rem;
+  margin: 1vh;
 }
 .html-carrito .cantidad a:hover {
   scale: 1.04;
 }
 .html-carrito .cantidad h3 {
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 .html-carrito .cantidad input {
   width: 5vh;
-  height: auto;
+  height: 3vh;
 }
 .html-carrito .detalle-pago {
   width: 100%;
@@ -1265,6 +1267,11 @@ body {
   padding: 1vh;
 }
 
+@media (max-width: 900px) {
+  .html-carrito .descripcion-carrito h4 {
+    font-size: 15px;
+  }
+}
 .grid-tienda .contenedor-productos-1 .card .grupo-boton {
   padding: 0;
   font-size: small;
@@ -1467,17 +1474,32 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .html-carrito .carrito {
+    height: 150px;
+  }
+  .html-carrito .carrito .descripcion-carrito {
+    margin-top: 1vh;
+    padding: 0;
+    width: 50;
+  }
   .html-carrito .carrito .descripcion-carrito h3 {
     font-size: 2vh;
   }
   .html-carrito .carrito .descripcion-carrito h4 {
-    font-size: 1.5vh;
+    font-size: 10px;
   }
   .html-carrito .carrito .cantidad {
     gap: 1vh;
   }
   .html-carrito .carrito .cantidad a {
     margin: 1vh;
+    font-size: 1.5vh;
+  }
+  .html-carrito .carrito .cantidad h3 {
+    font-size: 1.5vh;
+  }
+  .html-carrito .carrito .cantidad input {
+    width: 3vh;
   }
   .html-carrito .detalle-pago {
     height: fit-content;

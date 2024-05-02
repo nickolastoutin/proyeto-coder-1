@@ -1,5 +1,11 @@
 @media (max-width:900px){
-    
+    .html-carrito{
+        .descripcion-carrito{
+            h4 {
+                font-size: 15px;
+            }
+        }
+    }
     
     } 
     .grid-tienda .contenedor-productos-1 .card .grupo-boton {
@@ -247,21 +253,29 @@
 @media (max-width:600px){
     .html-carrito{
         .carrito {
+            height: 150px;
             .descripcion-carrito {
+                margin-top: 1vh;
+                padding: 0;
+                width: 50;
                 h3 {
                     font-size: 2vh;
                 }
                 h4 {
-                    font-size: 1.5vh;
+                    font-size: 10px;
                 }
             }
             .cantidad {
                 gap: 1vh;
                 a {
                     margin: 1vh;
-                    i {
-                        
-                    }
+                    font-size: 1.5vh;
+                }
+                h3 {
+                    font-size: 1.5vh;
+                }
+                input {
+                    width: 3vh;
                 }
             }
         }
